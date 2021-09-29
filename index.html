@@ -1,209 +1,136 @@
-
-
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+    <title>Sulekha- Profile Page</title>
+    <style>
+      table, th, td {
+       border: 1px solid black; }
+     table.center {
+      margin-left: auto;
+      margin-right: auto; }
+   </style>
+  </head>
 
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 
-<html>
-<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
-<style type="text/css">
-<!--
-span.cls_002{font-family:"Calibri Bold",serif;font-size:12.1px;color:rgb(0,0,9);font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_002{font-family:"Calibri Bold",serif;font-size:12.1px;color:rgb(0,0,9);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_003{font-family:"Calibri",serif;font-size:12.1px;color:rgb(0,0,9);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_003{font-family:"Calibri",serif;font-size:12.1px;color:rgb(0,0,9);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_004{font-family:"Calibri",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_004{font-family:"Calibri",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_032{font-family:"Calibri Bold",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: underline}
-div.cls_032{font-family:"Calibri Bold",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_007{font-family:"Calibri Italic",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-div.cls_007{font-family:"Calibri Italic",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-span.cls_008{font-family:"Calibri",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_008{font-family:"Calibri",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_009{font-family:"Calibri Italic",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-div.cls_009{font-family:"Calibri Italic",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-span.cls_011{font-family:"Calibri Bold",serif;font-size:11.1px;color:rgb(0,0,9);font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_011{font-family:"Calibri Bold",serif;font-size:11.1px;color:rgb(0,0,9);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_005{font-family:"Calibri",serif;font-size:11.1px;color:rgb(0,0,9);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_005{font-family:"Calibri",serif;font-size:11.1px;color:rgb(0,0,9);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_012{font-family:"Calibri",serif;font-size:7.0px;color:rgb(0,0,9);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_012{font-family:"Calibri",serif;font-size:7.0px;color:rgb(0,0,9);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_033{font-family:"Calibri Bold Italic",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: underline}
-div.cls_033{font-family:"Calibri Bold Italic",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-span.cls_006{font-family:"Calibri Bold",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_006{font-family:"Calibri Bold",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_013{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_013{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_014{font-family:"Calibri Bold Italic",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-div.cls_014{font-family:"Calibri Bold Italic",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-span.cls_015{font-family:Courier New,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_015{font-family:Courier New,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_016{font-family:"Calibri Bold",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_016{font-family:"Calibri Bold",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_017{font-family:"Calibri Bold",serif;font-size:11.1px;color:rgb(66,66,66);font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_017{font-family:"Calibri Bold",serif;font-size:11.1px;color:rgb(66,66,66);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_018{font-family:"Calibri Bold",serif;font-size:11.1px;color:rgb(121,121,121);font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_018{font-family:"Calibri Bold",serif;font-size:11.1px;color:rgb(121,121,121);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_019{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_019{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_020{font-family:"Calibri Italic",serif;font-size:11.1px;color:rgb(0,0,9);font-weight:normal;font-style:italic;text-decoration: none}
-div.cls_020{font-family:"Calibri Italic",serif;font-size:11.1px;color:rgb(0,0,9);font-weight:normal;font-style:italic;text-decoration: none}
-span.cls_034{font-family:"Calibri Bold",serif;font-size:11.1px;color:rgb(0,0,9);font-weight:bold;font-style:normal;text-decoration: underline}
-div.cls_034{font-family:"Calibri Bold",serif;font-size:11.1px;color:rgb(0,0,9);font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_021{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_021{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_023{font-family:Courier New,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_023{font-family:Courier New,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_024{font-family:"Calibri Italic",serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-div.cls_024{font-family:"Calibri Italic",serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-span.cls_022{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_022{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_025{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,9);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_025{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,9);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_027{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-div.cls_027{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
-span.cls_029{font-family:Courier New,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_029{font-family:Courier New,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_028{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-div.cls_028{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
-span.cls_035{font-family:"Calibri Italic",serif;font-size:11.1px;color:rgb(0,0,9);font-weight:normal;font-style:italic;text-decoration: underline}
-div.cls_035{font-family:"Calibri Italic",serif;font-size:11.1px;color:rgb(0,0,9);font-weight:normal;font-style:italic;text-decoration: none}
-span.cls_026{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,9);font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_026{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,9);font-weight:normal;font-style:normal;text-decoration: none}
--->
-</style>
-<script type="text/javascript" src="ec3bb9e6-20dd-11ec-a980-0cc47a792c0a_id_ec3bb9e6-20dd-11ec-a980-0cc47a792c0a_files/wz_jsgraphics.js"></script>
-</head>
-<body>
-<div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden">
-<div style="position:absolute;left:0px;top:0px">
-<img src="ec3bb9e6-20dd-11ec-a980-0cc47a792c0a_id_ec3bb9e6-20dd-11ec-a980-0cc47a792c0a_files/background1.jpg" width=612 height=792></div>
-<div style="position:absolute;left:281.93px;top:45.72px" class="cls_002"><span class="cls_002">SULEKH</span></div>
-<div style="position:absolute;left:42.60px;top:64.08px" class="cls_003"><span class="cls_003">barak25sukhi@gmail.com</span></div>
-<div style="position:absolute;left:470.86px;top:64.08px" class="cls_002"><span class="cls_002">+</span><span class="cls_004">91-8884144437</span></div>
-<div style="position:absolute;left:42.60px;top:95.90px" class="cls_032"><span class="cls_032">Interests:</span></div>
-<div style="position:absolute;left:42.60px;top:110.54px" class="cls_007"><span class="cls_007">Data Science</span><span class="cls_008">: Artificial Intelligence and Data Mining; </span><span class="cls_007">Networking:</span><span class="cls_008"> MESH Networking; </span><span class="cls_007">Processes</span><span class="cls_008">: Agile, Scrum and</span></div>
-<div style="position:absolute;left:42.60px;top:125.18px" class="cls_008"><span class="cls_008">Reverse engineering;</span><span class="cls_009"> Connectivity</span><span class="cls_008">: Embedded devices, Bluetooth, Bluetooth Low Energy, Wi-Fi, NFC.</span></div>
-<div style="position:absolute;left:42.60px;top:153.26px" class="cls_032"><span class="cls_032">Education:</span></div>
-<div style="position:absolute;left:89.30px;top:184.22px" class="cls_011"><span class="cls_011">Qualification</span></div>
-<div style="position:absolute;left:222.05px;top:184.22px" class="cls_011"><span class="cls_011">Year</span></div>
-<div style="position:absolute;left:335.23px;top:184.22px" class="cls_011"><span class="cls_011">Board</span></div>
-<div style="position:absolute;left:452.11px;top:184.22px" class="cls_011"><span class="cls_011">Percentage</span></div>
-<div style="position:absolute;left:93.38px;top:198.62px" class="cls_005"><span class="cls_005">Bachelor of</span></div>
-<div style="position:absolute;left:68.18px;top:210.02px" class="cls_005"><span class="cls_005">Technology( Computer</span></div>
-<div style="position:absolute;left:220.73px;top:210.38px" class="cls_005"><span class="cls_005">2014</span></div>
-<div style="position:absolute;left:291.77px;top:210.38px" class="cls_005"><span class="cls_005">NIT Kurukshetra, Haryana</span></div>
-<div style="position:absolute;left:439.99px;top:210.02px" class="cls_005"><span class="cls_005">9.1283/10 CGP</span></div>
-<div style="position:absolute;left:90.50px;top:221.30px" class="cls_005"><span class="cls_005">Engineering)</span></div>
-<div style="position:absolute;left:77.06px;top:233.06px" class="cls_005"><span class="cls_005">Diploma (Computer</span></div>
-<div style="position:absolute;left:292.13px;top:233.06px" class="cls_005"><span class="cls_005">K.C.G.P.W.,   mbala City ,</span></div>
-<div style="position:absolute;left:220.73px;top:238.70px" class="cls_005"><span class="cls_005">2010</span></div>
-<div style="position:absolute;left:462.55px;top:238.70px" class="cls_005"><span class="cls_005">75.9%</span></div>
-<div style="position:absolute;left:90.50px;top:244.34px" class="cls_005"><span class="cls_005">Engineering)</span></div>
-<div style="position:absolute;left:327.65px;top:244.34px" class="cls_005"><span class="cls_005">Haryana</span></div>
-<div style="position:absolute;left:292.73px;top:256.25px" class="cls_005"><span class="cls_005">CBSE(Kendriya Vidyalaya,</span></div>
-<div style="position:absolute;left:110.06px;top:261.89px" class="cls_005"><span class="cls_005">10</span><span class="cls_012"><sup>th</sup></span></div>
-<div style="position:absolute;left:220.73px;top:261.89px" class="cls_005"><span class="cls_005">2007</span></div>
-<div style="position:absolute;left:466.78px;top:261.89px" class="cls_005"><span class="cls_005">73%</span></div>
-<div style="position:absolute;left:310.37px;top:267.53px" class="cls_005"><span class="cls_005">Rohtak), Haryana</span></div>
-<div style="position:absolute;left:42.60px;top:308.81px" class="cls_032"><span class="cls_032">Publications /Paper</span><span class="cls_033"> </span><span class="cls_032">Presentations</span><span class="cls_006">:</span></div>
-<div style="position:absolute;left:60.60px;top:324.05px" class="cls_013"><span class="cls_013">•</span></div>
-<div style="position:absolute;left:87.51px;top:324.05px" class="cls_009"><span class="cls_009">Connection Oriented Mesh</span><span class="cls_014"> </span><span class="cls_009">Network for Mobile Devices using Bluetooth Low Energy - </span><span class="cls_014">  CM SenSys</span><span class="cls_009">  2015,</span></div>
-<div style="position:absolute;left:78.62px;top:337.49px" class="cls_009"><span class="cls_009">Seoul, South Korea 2015</span></div>
-<div style="position:absolute;left:96.62px;top:350.93px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Presented demo for mesh networking (Demo   ccepted) [Pages 453-454 ΁ </span><span class="cls_016">ISBN: 978-1-4503-3631-4</span></div>
-<div style="position:absolute;left:60.60px;top:378.29px" class="cls_013"><span class="cls_013">•</span></div>
-<div style="position:absolute;left:87.51px;top:378.29px" class="cls_009"><span class="cls_009"> </span><A HREF="https://sites.google.com/site/hprabhatgupta/samsung1.pdf?attredirects=0&d=1">Mesh Network for Mobile Devices using Bluetooth Low Energy</A> - <span class="cls_014">IEEE Sensors</span><span class="cls_009"> 2015, South Korea 2015</span></div>
-<div style="position:absolute;left:96.62px;top:391.73px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Regular Paper [</span><span class="cls_017"> INSPEC Accession Number : </span><span class="cls_018">15717341</span><span class="cls_008">΁</span></div>
-<div style="position:absolute;left:60.60px;top:407.93px" class="cls_019"><span class="cls_019">• </span><span class="cls_007">  Cooperative mini-clenches clustering approach in wireless sensor network - </span><span class="cls_020">NIT, Kurukshetra, 2013</span></div>
-<div style="position:absolute;left:96.62px;top:434.71px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Presented and worked on how we can reduce the power consumption in WSN</span></div>
-<div style="position:absolute;left:60.60px;top:448.75px" class="cls_013"><span class="cls_013">• </span><span class="cls_009">  BLE MESH Paper - Samsung Research Institute, Bangalore</span></div>
-<div style="position:absolute;left:96.62px;top:462.19px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Submitted internal paper in </span><span class="cls_016">Samsung</span><span class="cls_008"> on Mesh network</span></div>
-<div style="position:absolute;left:60.60px;top:476.11px" class="cls_013"><span class="cls_013">•</span></div>
-<div style="position:absolute;left:78.62px;top:476.11px" class="cls_009"><span class="cls_009"> </span><A HREF="https://sites.google.com/site/hprabhatgupta/samsung2.pdf?attredirects=0&d=1">“SenSys -   Sensor Data Sharing System for Smart Devices using Bluetooth Low Energy</A>” -  CS R workshop</div>
-<div style="position:absolute;left:78.62px;top:489.55px" class="cls_009"><span class="cls_009">2015 conjunction with  CM SenSys 2015, Seoul, South Korea 2015</span></div>
-<div style="position:absolute;left:60.60px;top:503.59px" class="cls_013"><span class="cls_013">•</span></div>
-<div style="position:absolute;left:81.14px;top:503.59px" class="cls_009"><span class="cls_009">“Cooperative mini-clutches clustering approach in wireless sensor network” under the guidance of   sst. Prof.</span></div>
-<div style="position:absolute;left:78.62px;top:517.03px" class="cls_009"><span class="cls_009">Virender Ranga got selected for </span><span class="cls_014">IEEE conference</span><span class="cls_009"> - June ’13- ‘14</span></div>
-<div style="position:absolute;left:42.60px;top:558.55px" class="cls_032"><span class="cls_032">Computing Skills</span><span class="cls_034">:</span></div>
-<div style="position:absolute;left:60.60px;top:572.23px" class="cls_021"><span class="cls_021">• </span><span class="cls_020">   Programming:</span></div>
-<div style="position:absolute;left:96.62px;top:585.67px" class="cls_023"><span class="cls_023">o</span><span class="cls_021"> </span><span class="cls_024">  Proficient: Core </span><span class="cls_005">Java, C, C++</span></div>
-<div style="position:absolute;left:96.62px;top:599.86px" class="cls_023"><span class="cls_023">o</span><span class="cls_021"> </span><span class="cls_024">  Beginner</span><span class="cls_022">: </span><span class="cls_005">HTML, SQL, Android</span></div>
-<div style="position:absolute;left:60.60px;top:614.26px" class="cls_025"><span class="cls_025">• </span><span class="cls_005">   Algorithms & Data structures</span></div>
-<div style="position:absolute;left:60.60px;top:627.70px" class="cls_025"><span class="cls_025">• </span><span class="cls_027">   Tools:</span><span class="cls_022"> </span><span class="cls_004">Eclipse, Centos, GIT, Putty, Jira, Star UML, ADB, Log Filter, SVN, Bluetooth PTS, MecApp,</span></div>
-<div style="position:absolute;left:78.62px;top:642.34px" class="cls_004"><span class="cls_004">ComProbe Protocol Analysis System, Notepad++, no machine, maven, postman</span></div>
-<div style="position:absolute;left:60.60px;top:656.74px" class="cls_025"><span class="cls_025">• </span><span class="cls_027">   Build master for releases and delivery.</span></div>
-<div style="position:absolute;left:60.60px;top:670.54px" class="cls_025"><span class="cls_025">• </span><span class="cls_027">   Scrum master role</span></div>
-<div style="position:absolute;left:42.60px;top:699.22px" class="cls_032"><span class="cls_032">Experience</span><span class="cls_006">: </span><span class="cls_005">4 Year 3 Months</span></div>
-<div style="position:absolute;left:42.60px;top:727.30px" class="cls_008"><span class="cls_008">•</span><span class="cls_011"> R&D Division, Ericsson, Gurgaon</span></div>
-<div style="position:absolute;left:262.85px;top:727.30px" class="cls_008"><span class="cls_008">•</span><span class="cls_011"> Software Engineer</span><span class="cls_005"> (Level 6)</span></div>
-<div style="position:absolute;left:479.98px;top:727.30px" class="cls_011"><span class="cls_011">•June 2017-till</span></div>
-<div style="position:absolute;left:42.60px;top:740.74px" class="cls_011"><span class="cls_011">present</span></div>
-</div>
-<div style="position:absolute;left:50%;margin-left:-306px;top:802px;width:612px;height:792px;border-style:outset;overflow:hidden">
-<div style="position:absolute;left:0px;top:0px">
-<img src="ec3bb9e6-20dd-11ec-a980-0cc47a792c0a_id_ec3bb9e6-20dd-11ec-a980-0cc47a792c0a_files/background2.jpg" width=612 height=792></div>
-<div style="position:absolute;left:60.60px;top:42.60px" class="cls_019"><span class="cls_019">• </span><span class="cls_022">  RM-Invoicing  -</span><span class="cls_009"> Java</span></div>
-<div style="position:absolute;left:96.62px;top:56.76px" class="cls_029"><span class="cls_029">o</span><span class="cls_019"> </span><span class="cls_022">  Developed NRTA Invoice generation software for postpaid bills.</span></div>
-<div style="position:absolute;left:96.62px;top:70.56px" class="cls_029"><span class="cls_029">o</span><span class="cls_019"> </span><span class="cls_022">  Designed and </span><span class="cls_008">developed </span><span class="cls_022">two phase billing invoice generation system for postpaid.</span></div>
-<div style="position:absolute;left:96.62px;top:84.74px" class="cls_029"><span class="cls_029">o</span><span class="cls_019"> </span><span class="cls_022">  Played Scrum master role for 3 months for my team</span><span class="cls_028">.</span></div>
-<div style="position:absolute;left:96.62px;top:98.54px" class="cls_029"><span class="cls_029">o</span><span class="cls_019"> </span><span class="cls_022">  Build master for Project release and delivery.</span></div>
-<div style="position:absolute;left:96.62px;top:111.62px" class="cls_029"><span class="cls_029">o</span><span class="cls_019"> </span><span class="cls_008">  Got </span><span class="cls_016"> W RD FOR release success delivery on time</span></div>
-<div style="position:absolute;left:60.60px;top:126.62px" class="cls_019"><span class="cls_019">• </span><span class="cls_022">  RM-CPM -java</span></div>
-<div style="position:absolute;left:96.62px;top:140.42px" class="cls_029"><span class="cls_029">o</span><span class="cls_019"> </span><span class="cls_022">  Developing slim CPM</span></div>
-<div style="position:absolute;left:96.62px;top:154.22px" class="cls_029"><span class="cls_029">o</span><span class="cls_019"> </span><span class="cls_022">  Build master for CPM project release and delivery</span></div>
-<div style="position:absolute;left:42.60px;top:181.70px" class="cls_008"><span class="cls_008">•</span><span class="cls_011"> Samsung Research Institute, Bangalore</span></div>
-<div style="position:absolute;left:255.29px;top:181.70px" class="cls_008"><span class="cls_008">•</span><span class="cls_011"> Senior Software Engineer</span></div>
-<div style="position:absolute;left:397.15px;top:181.70px" class="cls_011"><span class="cls_011">•July 2014 -June 2017</span></div>
-<div style="position:absolute;left:60.60px;top:209.06px" class="cls_019"><span class="cls_019">• </span><span class="cls_022">  Bluetooth Low Energy DMT Mesh networking for packet routing -</span><span class="cls_009"> Java,    ndroid, C</span></div>
-<div style="position:absolute;left:96.62px;top:223.46px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Designed & developed packet processor module in packet layer  for packing and unpacking of the all</span></div>
-<div style="position:absolute;left:114.62px;top:236.90px" class="cls_008"><span class="cls_008">packets in the Mesh</span></div>
-<div style="position:absolute;left:96.62px;top:250.37px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Developed the timer module that helps in multiprocessor environment and  scheduling packets using</span></div>
-<div style="position:absolute;left:114.62px;top:263.81px" class="cls_008"><span class="cls_008">Singleton Design Pattern</span></div>
-<div style="position:absolute;left:96.62px;top:277.25px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Developed a chat application using mesh using both selective and broadcast for demonstrating the</span></div>
-<div style="position:absolute;left:114.62px;top:290.69px" class="cls_008"><span class="cls_008">use of Mesh</span></div>
-<div style="position:absolute;left:96.62px;top:304.13px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Developed ‘smart light’ application where the root node controls all the child nodes for turning the</span></div>
-<div style="position:absolute;left:114.62px;top:317.57px" class="cls_008"><span class="cls_008">lights on child nodes ON and OFF using Observer Design Pattern</span></div>
-<div style="position:absolute;left:96.62px;top:331.01px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Got </span><span class="cls_016">EMPLOYEE OF THE MONTH and SPOT   W RD</span><span class="cls_008">.</span></div>
-<div style="position:absolute;left:60.60px;top:344.93px" class="cls_013"><span class="cls_013">•</span></div>
-<div style="position:absolute;left:85.02px;top:344.93px" class="cls_009"><span class="cls_009">2dp sink role in mesh - Java and   ndroid</span></div>
-<div style="position:absolute;left:96.62px;top:358.37px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">   Developed</span></div>
-<div style="position:absolute;left:173.91px;top:358.37px" class="cls_008"><span class="cls_008">2DP sink application for mesh. This application helps in switching the role of sink owner</span></div>
-<div style="position:absolute;left:114.62px;top:371.81px" class="cls_008"><span class="cls_008">on need basis in multi device environment</span></div>
-<div style="position:absolute;left:96.62px;top:385.25px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_009">  Debugging of several Classic Bluetooth</span></div>
-<div style="position:absolute;left:295.66px;top:385.25px" class="cls_009"><span class="cls_009">2DP issue in Bluedroid   rchitecture</span></div>
-<div style="position:absolute;left:60.60px;top:399.29px" class="cls_013"><span class="cls_013">• </span><span class="cls_009">  IPSP implementation-java and c</span></div>
-<div style="position:absolute;left:96.62px;top:412.73px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_009">  Design of the IPSP from application to network layer.</span></div>
-<div style="position:absolute;left:96.62px;top:426.19px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_009">  Implemented POC till user space in Bluetooth architecture.</span></div>
-<div style="position:absolute;left:60.60px;top:440.11px" class="cls_013"><span class="cls_013">• </span><span class="cls_009">  Friend finder -java and android</span></div>
-<div style="position:absolute;left:96.62px;top:453.55px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_009">  Designed and implemented friend finder using mesh networking.</span></div>
-<div style="position:absolute;left:60.60px;top:467.59px" class="cls_013"><span class="cls_013">• </span><span class="cls_009">   Wifi password sharing-java and android</span></div>
-<div style="position:absolute;left:96.62px;top:481.03px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_009">  Designed and developed application that first connect using Bluetooth after that shares the password</span></div>
-<div style="position:absolute;left:114.62px;top:494.47px" class="cls_009"><span class="cls_009">for the connection .</span></div>
-<div style="position:absolute;left:42.60px;top:523.39px" class="cls_032"><span class="cls_032">Awards & Achievements:</span></div>
-<div style="position:absolute;left:60.60px;top:539.11px" class="cls_025"><span class="cls_025">•</span></div>
-<div style="position:absolute;left:85.02px;top:538.03px" class="cls_035"><span class="cls_035">cademics</span></div>
-<div style="position:absolute;left:96.62px;top:551.35px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Branch topper in 6th semester of under-graduation</span></div>
-<div style="position:absolute;left:96.62px;top:564.79px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Member of Placement   dvisory Committee</span></div>
-<div style="position:absolute;left:96.62px;top:578.23px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Toppers Scholarship awarded during Diploma in Computer Engineering</span></div>
-<div style="position:absolute;left:96.62px;top:591.67px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">   mong top 0.08 percent scorers of   IEEE 2010</span></div>
-<div style="position:absolute;left:96.62px;top:605.14px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  G TE qualified.</span></div>
-<div style="position:absolute;left:60.60px;top:619.18px" class="cls_026"><span class="cls_026">• </span><span class="cls_020">  </span><span class="cls_035">Sports</span></div>
-<div style="position:absolute;left:96.62px;top:632.62px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  State level Volleyball player during diploma</span></div>
-<div style="position:absolute;left:96.62px;top:646.06px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  State level 3rd prize winner in athletics in 2008</span></div>
-<div style="position:absolute;left:96.62px;top:659.50px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Bagged 1 Gold, 2 Silver and 3 Bronze medals in various Sports Meets at NIT Kurukshetra</span></div>
-<div style="position:absolute;left:60.60px;top:673.42px" class="cls_026"><span class="cls_026">• </span><span class="cls_020">  </span><span class="cls_035">Collegiate Clubs</span></div>
-<div style="position:absolute;left:96.62px;top:686.86px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Committee Head of Scheduling in Confluence’ 14 at NIT Kurukshetra</span></div>
-<div style="position:absolute;left:96.62px;top:700.30px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Member of Lit n Deb (Hindi) since 2013</span></div>
-<div style="position:absolute;left:42.60px;top:713.74px" class="cls_032"><span class="cls_032">Extracurricular Activities</span></div>
-<div style="position:absolute;left:96.62px;top:728.38px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Secured 1st  and  3rd position in Humbug (debugging event) during Literati’ 11-12</span></div>
-<div style="position:absolute;left:96.62px;top:741.82px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Secured 1st position in Code   b Initio (code designing event during   storic languages) in Literati’ 12</span></div>
-<div style="position:absolute;left:96.62px;top:755.26px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Secured 1st position in Lab Racers (practical skill based event) during Literati’ 11</span></div>
-</div>
-<div style="position:absolute;left:50%;margin-left:-306px;top:1604px;width:612px;height:792px;border-style:outset;overflow:hidden">
-<div style="position:absolute;left:0px;top:0px">
-<img src="ec3bb9e6-20dd-11ec-a980-0cc47a792c0a_id_ec3bb9e6-20dd-11ec-a980-0cc47a792c0a_files/background3.jpg" width=612 height=792></div>
-<div style="position:absolute;left:96.62px;top:41.88px" class="cls_015"><span class="cls_015">o</span><span class="cls_013"> </span><span class="cls_008">  Secured 2nd position in Kahani Teri Meri Zubani (on the spot story making event) during</span></div>
-<div style="position:absolute;left:114.62px;top:55.32px" class="cls_008"><span class="cls_008">Confluence’13</span></div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="#">
+              Home
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#contact">
+            Contact
+            </a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#scroll">
+          Education
+          </a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">
+              Work Experience
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Interests">
+              Interests
+            </a>
+          </li>
+            </div>
+        </ul>
+      </div>
+    </nav>
+<div class="align-right">
+<br><br>
+    <h1 style="color:blue;">Sulekha Barak</h1>
+<h3>
+   Senior Software Engineer
+</h3>
+  <p>Ericsson India Pvt. Ltd.</p>
+<br id="contact">
+<p>
+    Contact Details:
+    <br>
+    Mobile No.: 8884144437
+    <br>
+    <br>
+    Email: barak25sukhi@gmail.com
+    <br>
+</p>
+<br>
+<h3>
+   Profile
+</h3>
+<p>
+Interests:
+<I>Data Science</I>: Artificial Intelligence and Data Mining; <I>Networking</I>: MESH Networking; <I>Processes</I>: Agile, Scrum and Reverse engineering; <I>Connectivity</I>: Embedded devices, Bluetooth, Bluetooth Low Energy, Wi-Fi, NFC.
+</p>
+<br id="scroll"><br>
+<h3>  Education </h3>
+<br>
+<table style="width:100%">
+<tr>
+<td><center>2014 </center></td>
+<td>Bachelor of Technology( Computer Engineering), NIT Kurukshetra </td>
+</tr>
+<tr>
+<td><center>2010</center></td>
+<td>Diploma (Computer Engineering). K.C.G.P.W., Ambala, Haryana </td>
+</tr>
+</table>
+</h3>
+<br  id="work"><br>
+<h3>Work Experience </h3>
+<br><br>
+  <table style="width:100%">
+  <tr>
+  <td>June 2017 </td>
+  <td> 	Ericsson India Pvt. Ltd.</td>
+  <td> 	Senior Software Engineer</td>
+  </tr>
+  <tr>
+  <td>2014 to 2017</td>
+  <td>Samsung Research Institute, Bangalore </td>
+  <td>Software Engineer</td>
+  </tr>
+  </table>
+</h4>
+
+<br>
+
+<br>
+<h4>
+  Publications /Paper Presentations: </h4>
+  <br>
+  <h5 class="smallBlack">
+1.	“<b>A Connection Oriented Mesh Network for Mobile Devices using Bluetooth Low Energy</b>” ACM SenSys 2015, Seoul, South Korea 2015 ,Presented demo for mesh networking (Demo Accepted) [Pages 453 454 ] ISBN: 978 1 4503 3631 4
+<br><br>
+2.	“<b>A Mesh Network for Mobile Devices using Bluetooth Low Energy</b>”, IEEE Sensors 2015, South Korea 2015 o Regular Paper [ INSPEC Accession Number : 15717341]
+<br><br>
+3. “<b>Cooperative mini clenches clustering approach in wireless sensor network</b>”,  NIT, Kurukshetra, 2013
+<br><br>
+4. “<b>SenSys A Sensor Data Sharing System for Smart Devices using Bluetooth Low Energy</b>”, CSAR workshop 2015 conjunction with ACM SenSys 2015, Seoul, South Korea 2015
+<br><br>
+5. “<b>Cooperative mini clutches clustering approach in wireless sensor network</b>”, under the guidance of Asst. Prof. Virender Ranga got selected for IEEE conference June ’13 ‘14
+<br><br>
+</h5>
 </div>
 
-</body>
+  </body>
 </html>
